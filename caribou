@@ -1,0 +1,15 @@
+birthday = input()
+today = input()
+birthday_day, birthday_month=map(int,birthday.split())
+today_day, today_month=map(int,today.split())
+if birthday_month > today_month:
+	print("Before")
+elif birthday_month < today_month:
+	print("After")
+else:
+	if birthday_day > today_day:
+		print("Before")
+	elif birthday_day < today_day:
+		print("After")
+	else:
+		print("Today")
